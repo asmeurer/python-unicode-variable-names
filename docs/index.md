@@ -81,7 +81,7 @@ The pages can be viewed here:
 
 **WARNING: the pages are quite large and may cause issues in some browsers.**
 
-[**Start Characters**](start-characters.html) ([raw markdown](start-characters.md))
+[**Start Characters**](start-characters.html) (<a href="start-characters.md">raw markdown</a>)
 
-[**Continue Characters**](continue-characters.html) ([raw markdown](continue-characters.md))
+[**Continue Characters**](continue-characters.html) (<a href="continue-characters.md">raw markdown</a>)
 
