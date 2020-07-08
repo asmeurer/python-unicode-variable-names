@@ -103,7 +103,6 @@ FOOTER = """ [^unknown]: The Unicode name for this character is not present in t
 character on
 [fileformat.info](http://www.fileformat.info/info/unicode/char/search.htm) or
 [Wikipedia](https://www.wikipedia.org/).
-
 """
 
 def generate_characters():
@@ -158,6 +157,7 @@ first, see the [Continue Characters](continue-characters).
         f.write(table_header)
         for c in start_characters:
             write_character(f, c)
+        f.write(FOOTER)
 
     with open('docs/continue-characters.md', 'w') as f:
         f.write("""
@@ -169,6 +169,7 @@ character including the first, see the [Start Characters](start-characters).
         f.write(header)
         for c in continue_characters:
             write_character(f, c)
+        f.write(FOOTER)
 
 if __name__ == '__main__':
     main()
