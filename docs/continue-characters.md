@@ -3,6 +3,7 @@ These are the characters that are valid as any character other than the first
 in a Python variable name. For a list of characters that are valid for any
 character including the first, see the [Start Characters](start-characters).
 
+You can also view the [raw markdown](continue-characters.md) for this page.
 ## Continue Characters
 
 This page was generated using Python version 3.8.2, which

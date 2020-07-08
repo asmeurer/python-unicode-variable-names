@@ -92,9 +92,9 @@ The pages can be viewed here:
 
 **WARNING: the pages are quite large and may cause issues in some browsers.**
 
-[**Start Characters**](start-characters.html)
+[**Start Characters**](start-characters.html) ([raw markdown](start-characters.md))
 
-[**Continue Characters**](continue-characters.html)
+[**Continue Characters**](continue-characters.html) ([raw markdown](continue-characters.md))
 
 """
 
@@ -155,6 +155,7 @@ These are the characters that are valid as any character in a Python variable
 name. For a list of characters that are valid for any character other than the
 first, see the [Continue Characters](continue-characters).
 
+You can also view the [raw markdown](start-characters.md) for this page.
 """)
         f.write("## Start Characters\n\n")
         f.write(table_header)
@@ -168,6 +169,7 @@ These are the characters that are valid as any character other than the first
 in a Python variable name. For a list of characters that are valid for any
 character including the first, see the [Start Characters](start-characters).
 
+You can also view the [raw markdown](continue-characters.md) for this page.
 """)
         f.write("## Continue Characters\n\n")
         f.write(header)
