@@ -88,9 +88,13 @@ characters cannot be the first character in an identifier. They correspond to
 "numbers" in the old ASCII-only way. A valid identifier can be any "start"
 character followed by any number of "start" or "continue" characters.
 
-[**(Jump to start characters)**](#start-characters)
+The pages can be viewed here:
 
-[**(Jump to continue characters)**](#continue-characters)
+**WARNING: the pages are quite large and may cause issues in some browsers.**
+
+[**Start Characters**](start-characters.html)
+
+[**Continue Characters**](continue-characters.html)
 
 """
 
@@ -128,20 +132,27 @@ def write_character(f, c):
 
 def main():
     start_characters, continue_characters = generate_characters()
+
     with open("docs/index.md", 'w') as f:
         f.write(HEADER)
-        f.write(f"""\
+
+    header = f"""\
 This page was generated using Python version {sys.version.split()[0]}, which
-uses Unicode version {unicodedata.unidata_version}""")
-        f.write("## Start Characters\n\n")
-        header = """\
+uses Unicode version {unicodedata.unidata_version}"""
+
+    table_header = """\
 | Hex | Character | Name |
 |-----|-----------|------|
 """
+
+    with open("docs/start-characters.md", 'w') as f:
         f.write(header)
+        f.write("## Start Characters\n\n")
+        f.write(table_header)
         for c in start_characters:
             write_character(f, c)
-        f.write('\n')
+
+    with open('docs/continue-characters.md', 'w') as f:
         f.write("## Continue Characters\n\n")
         f.write(header)
         for c in continue_characters:
