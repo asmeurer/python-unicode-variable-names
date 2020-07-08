@@ -132,7 +132,8 @@ uses Unicode version {unicodedata.unidata_version}""")
         f.write("## Start Characters\n\n")
         header = """\
 | Hex | Character | Name |
-|-----|-----------|------|"""
+|-----|-----------|------|
+"""
         f.write(header)
         for c in start_characters:
             write_character(f, c)
