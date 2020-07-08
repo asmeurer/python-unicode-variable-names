@@ -20,6 +20,9 @@ In Python 2, variable names could only contain the ASCII characters a-z, A-Z,
 0-9, and _, but in Python 3, a much larger set of Unicode characters are
 allowed.
 
+The source code for this page is on
+[GitHub](https://github.com/asmeurer/python-unicode-variable-names/settings).
+
 The full details of which Unicode characters are allowed is described in the
 [documentation](https://docs.python.org/3/reference/lexical_analysis.html#identifiers).
 
