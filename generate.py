@@ -21,7 +21,7 @@ In Python 2, variable names could only contain the ASCII characters a-z, A-Z,
 allowed.
 
 The source code for this page is on
-[GitHub](https://github.com/asmeurer/python-unicode-variable-names/settings).
+[GitHub](https://github.com/asmeurer/python-unicode-variable-names).
 
 The full details of which Unicode characters are allowed is described in the
 [documentation](https://docs.python.org/3/reference/lexical_analysis.html#identifiers).
