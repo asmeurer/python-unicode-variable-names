@@ -2,7 +2,8 @@
 These are the characters that are valid as any character other than the first
 in a Python variable name. For a list of characters that are valid for any
 character including the first, see the [Start Characters](start-characters).
-        ## Continue Characters
+
+## Continue Characters
 
 This page was generated using Python version 3.8.2, which
 uses Unicode version 12.1.0
