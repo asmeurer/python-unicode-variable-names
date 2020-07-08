@@ -5,6 +5,7 @@ Generate a list of all Unicode characters that are valid in Python identifiers
 Documentation reference: https://docs.python.org/3/reference/lexical_analysis.html#identifiers
 """
 
+import sys
 import unicodedata
 
 HEADER = """\
@@ -89,6 +90,14 @@ character followed by any number of "start" or "continue" characters.
 
 """
 
+FOOTER = """ [^unknown]: The Unicode name for this character is not present in the
+`unicodedata` database. You may be able to find more by searching the
+character on
+[fileformat.info](http://www.fileformat.info/info/unicode/char/search.htm) or
+[Wikipedia](https://www.wikipedia.org/).
+
+"""
+
 def generate_characters():
     start_characters = []
     continue_characters = []
@@ -105,23 +114,31 @@ def write_character(f, c):
     try:
         name = unicodedata.name(c)
     except ValueError:
-        name = "(unknown)"
+        name = "(unknown) [^unknown]"
     n = unicodedata.normalize('NFKC', c)
-    f.write(f"{hex(ord(c))} {c}: {name}")
+    f.write(f"| {hex(ord(c))} | {c} | {name}")
     if c != n:
         names = ', '.join(unicodedata.name(i) for i in n)
         f.write(f" (normalizes to {', '.join(hex(ord(i)) for i in n)} {n}: {names})")
-    f.write('\n')
+    f.write('|\n')
 
 def main():
     start_characters, continue_characters = generate_characters()
-    with open("index.md", 'w') as f:
+    with open("docs/index.md", 'w') as f:
         f.write(HEADER)
+        f.write(f"""\
+This page was generated using Python version {sys.version.split()[0]}, which
+uses Unicode version {unicodedata.unidata_version}""")
         f.write("## Start Characters\n\n")
+        header = """\
+| Hex | Character | Name |
+|-----|-----------|------|"""
+        f.write(header)
         for c in start_characters:
             write_character(f, c)
         f.write('\n')
         f.write("## Continue Characters\n\n")
+        f.write(header)
         for c in continue_characters:
             write_character(f, c)
 
