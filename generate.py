@@ -164,6 +164,7 @@ You can also view the [raw markdown](start-characters.md) for this page.
         f.write(FOOTER)
 
     with open('docs/continue-characters.md', 'w') as f:
+        f.write(header)
         f.write("""
 These are the characters that are valid as any character other than the first
 in a Python variable name. For a list of characters that are valid for any
