@@ -1,7 +1,9 @@
 ## Continue Characters
 
 This page was generated using Python version 3.7.6, which
-uses Unicode version 11.0.0| 0x30 | 0 | DIGIT ZERO|
+uses Unicode version 11.0.0
+
+| 0x30 | 0 | DIGIT ZERO|
 | 0x31 | 1 | DIGIT ONE|
 | 0x32 | 2 | DIGIT TWO|
 | 0x33 | 3 | DIGIT THREE|
