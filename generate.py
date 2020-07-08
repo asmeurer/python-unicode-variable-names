@@ -138,7 +138,9 @@ def main():
 
     header = f"""\
 This page was generated using Python version {sys.version.split()[0]}, which
-uses Unicode version {unicodedata.unidata_version}"""
+uses Unicode version {unicodedata.unidata_version}
+
+"""
 
     table_header = """\
 | Hex | Character | Name |
