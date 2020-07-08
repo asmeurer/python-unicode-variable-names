@@ -149,12 +149,22 @@ uses Unicode version {unicodedata.unidata_version}
 
     with open("docs/start-characters.md", 'w') as f:
         f.write(header)
+        f.write("""
+These are the characters that are valid as any character in a Python variable
+name. For a list of characters that are valid for any character other than the
+first, see the [Continue Characters](continue-characters).
+        """)
         f.write("## Start Characters\n\n")
         f.write(table_header)
         for c in start_characters:
             write_character(f, c)
 
     with open('docs/continue-characters.md', 'w') as f:
+        f.write("""
+These are the characters that are valid as any character other than the first
+in a Python variable name. For a list of characters that are valid for any
+character including the first, see the [Start Characters](start-characters).
+        """)
         f.write("## Continue Characters\n\n")
         f.write(header)
         for c in continue_characters:
