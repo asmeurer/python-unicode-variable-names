@@ -85,8 +85,9 @@ characters cannot be the first character in an identifier. They correspond to
 "numbers" in the old ASCII-only way. A valid identifier can be any "start"
 character followed by any number of "start" or "continue" characters.
 
-[**Start Characters**](#start-characters)
-[**Continue Characters**](#continue-characters)
+[**(Jump to start characters)**](#start-characters)
+
+[**(Jump to continue characters)**](#continue-characters)
 
 """
 
