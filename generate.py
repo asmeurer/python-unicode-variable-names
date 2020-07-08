@@ -98,7 +98,9 @@ The pages can be viewed here:
 
 """
 
-FOOTER = """ [^unknown]: The Unicode name for this character is not present in the
+FOOTER = """
+
+[^unknown]: The Unicode name for this character is not present in the
 `unicodedata` database. You may be able to find more by searching the
 character on
 [fileformat.info](http://www.fileformat.info/info/unicode/char/search.htm) or
