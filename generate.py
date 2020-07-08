@@ -34,11 +34,11 @@ produce the same variable name. For example:
 
 Normalization also combines accents, so it is possible for a valid name to
 contain characters that are not present below. For example, `á` consists of
-two characters, `a` (LATIN SMALL LETTER A, i.e., ASCII lowercase 'a'), and ` ́`
-(COMBINING ACUTE ACCENT). The second character, COMBINING ACUTE ACCENT, is not
-present in the list below because it is not valid in an identifier by itself.
-However, when it follows `a`, the two characters together NFKC normalize to
-the single character `á` (LATIN SMALL LETTER A WITH ACUTE).
+two characters, LATIN SMALL LETTER A (i.e., ASCII lowercase `a`) and COMBINING
+ACUTE ACCENT. The second character, COMBINING ACUTE ACCENT, is not present in
+the list below because it is not valid in an identifier by itself. However,
+when it follows `a`, the two characters together NFKC normalize to the single
+character `á` (LATIN SMALL LETTER A WITH ACUTE).
 
 You can normalize strings with Python using the `unicodedata` module:
 
