@@ -115,7 +115,7 @@ def write_character(f, c):
 
 def main():
     start_characters, continue_characters = generate_characters()
-    with open("identifiers.md", 'w') as f:
+    with open("index.md", 'w') as f:
         f.write(HEADER)
         f.write("## Start Characters\n\n")
         for c in start_characters:
