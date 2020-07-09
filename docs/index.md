@@ -47,10 +47,10 @@ The below table lists characters that normalize to other characters, but be
 aware that other combinations of characters such as combining accents may not
 be listed below but may still normalize to a character listed below.
 
-Characters that are not on this list cannot be used in variable names. The
-valid characters are primarily characters that are "like" alphanumeric +
-underscore. It doesn't include things like mathematical symbols (except for
-Greek letters because those are letters) or emoji.
+Other than that, Unicode characters that are not on this list cannot be used
+in variable names. The valid characters are primarily those that are "like"
+alphanumeric + underscore. It doesn't include things like mathematical symbols
+(except for Greek letters because those are letters) or emoji.
 
     >>> ∫x = 1
       File "<stdin>", line 1
