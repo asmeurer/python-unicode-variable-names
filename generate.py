@@ -149,6 +149,7 @@ uses Unicode version {unicodedata.unidata_version}
 """
 
     with open("docs/start-characters.md", 'w') as f:
+        f.write("## Start Characters\n\n")
         f.write(header)
         f.write("""
 These are the characters that are valid as any character in a Python variable
@@ -159,13 +160,13 @@ You can also view the <a href="start-characters.md">raw markdown</a> for this pa
 
 """)
         f.write(f"There are a total of {len(start_characters)} characters in this list.\n\n")
-        f.write("## Start Characters\n\n")
         f.write(table_header)
         for c in start_characters:
             write_character(f, c)
         f.write(FOOTER)
 
     with open('docs/continue-characters.md', 'w') as f:
+        f.write("## Continue Characters\n\n")
         f.write(header)
         f.write("""
 These are the characters that are valid as any character other than the first
@@ -176,8 +177,7 @@ You can also view the <a href="continue-characters.md">raw markdown</a> for this
 
 """)
         f.write(f"There are a total of {len(continue_characters)} characters in this list.\n\n")
-        f.write("## Continue Characters\n\n")
-        f.write(header)
+        f.write(table_header)
         for c in continue_characters:
             write_character(f, c)
         f.write(FOOTER)

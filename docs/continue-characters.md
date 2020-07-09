@@ -1,3 +1,5 @@
+## Continue Characters
+
 This page was generated using Python version 3.8.2, which
 uses Unicode version 12.1.0
 
@@ -10,11 +12,8 @@ You can also view the <a href="continue-characters.md">raw markdown</a> for this
 
 There are a total of 2908 characters in this list.
 
-## Continue Characters
-
-This page was generated using Python version 3.8.2, which
-uses Unicode version 12.1.0
-
+| Hex | Character | Name |
+|-----|-----------|------|
 | 0x30 | 0 | DIGIT ZERO|
 | 0x31 | 1 | DIGIT ONE|
 | 0x32 | 2 | DIGIT TWO|
