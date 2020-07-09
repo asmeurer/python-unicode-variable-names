@@ -150,7 +150,6 @@ uses Unicode version {unicodedata.unidata_version}
 
     with open("docs/start-characters.md", 'w') as f:
         f.write("## Start Characters\n\n")
-        f.write(header)
         f.write("""
 These are the characters that are valid as any character in a Python variable
 name. For a list of characters that are valid for any character other than the
@@ -159,6 +158,7 @@ first, see the [Continue Characters](continue-characters).
 You can also view the <a href="start-characters.md">raw markdown</a> for this page.
 
 """)
+        f.write(header)
         f.write(f"There are a total of {len(start_characters)} characters in this list.\n\n")
         f.write(table_header)
         for c in start_characters:
@@ -167,7 +167,6 @@ You can also view the <a href="start-characters.md">raw markdown</a> for this pa
 
     with open('docs/continue-characters.md', 'w') as f:
         f.write("## Continue Characters\n\n")
-        f.write(header)
         f.write("""
 These are the characters that are valid as any character other than the first
 in a Python variable name. For a list of characters that are valid for any
@@ -176,6 +175,7 @@ character including the first, see the [Start Characters](start-characters).
 You can also view the <a href="continue-characters.md">raw markdown</a> for this page.
 
 """)
+        f.write(header)
         f.write(f"There are a total of {len(continue_characters)} characters in this list.\n\n")
         f.write(table_header)
         for c in continue_characters:

@@ -1,14 +1,14 @@
 ## Continue Characters
 
-This page was generated using Python version 3.8.2, which
-uses Unicode version 12.1.0
-
 
 These are the characters that are valid as any character other than the first
 in a Python variable name. For a list of characters that are valid for any
 character including the first, see the [Start Characters](start-characters).
 
 You can also view the <a href="continue-characters.md">raw markdown</a> for this page.
+
+This page was generated using Python version 3.8.2, which
+uses Unicode version 12.1.0
 
 There are a total of 2908 characters in this list.
 
