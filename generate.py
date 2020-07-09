@@ -86,10 +86,10 @@ specifies:
 The key issue is that for many people, typing non-ASCII characters is not
 easy. It is usually only possible by copying and pasting. If you are 100%
 certain that your code will only be read and run by people who speak the same
-language as you and are able to easily type characters you are using, it is
-probably fine to do so. One possibility would be to provide aliases for names
-that are part of a public API, so that users can choose which to use (for
-example, `pi = π`).
+language as you and are able to easily type the characters you are using, it
+is probably fine to do so. One possibility would be to provide aliases for
+names that are part of a public API, so that users can choose which to use
+(for example, `pi = π`).
 
 If you do decide to use non-ASCII characters for variable names, be aware of
 the normalization issues described above. It is advisable to always insert
