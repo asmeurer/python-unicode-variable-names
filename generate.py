@@ -58,6 +58,22 @@ The below table lists characters that normalize to other characters, but be
 aware that other combinations of characters such as combining accents may not
 be listed below but may still normalize to a character listed below.
 
+Characters that are not on this list cannot be used in variable names. The
+valid characters are primarily characters that are "like" alphanumeric +
+underscore. It doesn't include things like mathematical characters (except for
+Greek letters because those are letters), or emoji.
+
+    >>> ∫x = 1
+      File "<stdin>", line 1
+        ∫x = 1
+         ^
+    SyntaxError: invalid character in identifier
+    >>> 💩 = 'Python 2'
+      File "<stdin>", line 1
+        💩 = 'Python 2'
+        ^
+    SyntaxError: invalid character in identifier
+
 ## Should I use these characters in my Python code?
 
 [PEP 8](https://www.python.org/dev/peps/pep-0008/#source-file-encoding)
