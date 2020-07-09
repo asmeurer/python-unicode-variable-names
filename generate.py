@@ -60,8 +60,8 @@ be listed below but may still normalize to a character listed below.
 
 Characters that are not on this list cannot be used in variable names. The
 valid characters are primarily characters that are "like" alphanumeric +
-underscore. It doesn't include things like mathematical characters (except for
-Greek letters because those are letters), or emoji.
+underscore. It doesn't include things like mathematical symbols (except for
+Greek letters because those are letters) or emoji.
 
     >>> ∫x = 1
       File "<stdin>", line 1
