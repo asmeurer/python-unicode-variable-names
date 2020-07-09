@@ -88,7 +88,7 @@ variable names in source files using their normalized form.
 
 There are two types of valid characters, "start" and "continue" characters.
 "Start" characters can be anywhere in an identifier. They correspond to
-"letters and underscore" in the old ASCII-only identifiers. "continue"
+"letters and underscore" in the old ASCII-only identifiers. "Continue"
 characters cannot be the first character in an identifier. They correspond to
 "numbers" in the old ASCII-only way. A valid identifier can be any "start"
 character followed by any number of "start" or "continue" characters.
