@@ -13,8 +13,6 @@ HEADER = """\
 directly. Rather, edit the file generate_names.py which generates this file.
 -->
 
-# Python Unicode Variable Names
-
 This page lists all the characters that are valid in Python 3 variable names.
 In Python 2, variable names could only contain the ASCII characters a-z, A-Z,
 0-9, and _, but in Python 3, a much larger set of Unicode characters are
