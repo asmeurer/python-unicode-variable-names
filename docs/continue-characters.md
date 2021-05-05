@@ -7,10 +7,10 @@ character including the first, see the [Start Characters](start-characters).
 
 You can also view the <a href="continue-characters.md">raw markdown</a> for this page.
 
-This page was generated using Python version 3.8.2, which
-uses Unicode version 12.1.0
+This page was generated using Python version 3.9.0, which
+uses Unicode version 13.0.0
 
-There are a total of 2908 characters in this list.
+There are a total of 2955 characters in this list.
 
 | Hex | Character | Name |
 |-----|-----------|------|
@@ -547,6 +547,7 @@ There are a total of 2908 characters in this list.
 | 0xb4b | ୋ | ORIYA VOWEL SIGN O|
 | 0xb4c | ୌ | ORIYA VOWEL SIGN AU|
 | 0xb4d | ୍ | ORIYA SIGN VIRAMA|
+| 0xb55 | ୕ | ORIYA SIGN OVERLINE|
 | 0xb56 | ୖ | ORIYA AI LENGTH MARK|
 | 0xb57 | ୗ | ORIYA AU LENGTH MARK|
 | 0xb62 | ୢ | ORIYA VOWEL SIGN VOCALIC L|
@@ -683,6 +684,7 @@ There are a total of 2908 characters in this list.
 | 0xd6d | ൭ | MALAYALAM DIGIT SEVEN|
 | 0xd6e | ൮ | MALAYALAM DIGIT EIGHT|
 | 0xd6f | ൯ | MALAYALAM DIGIT NINE|
+| 0xd81 | ඁ | SINHALA SIGN CANDRABINDU|
 | 0xd82 | ං | SINHALA SIGN ANUSVARAYA|
 | 0xd83 | ඃ | SINHALA SIGN VISARGAYA|
 | 0xdca | ් | SINHALA SIGN AL-LAKUNA|
@@ -1135,6 +1137,8 @@ There are a total of 2908 characters in this list.
 | 0x1abb | ᪻ | COMBINING PARENTHESES ABOVE|
 | 0x1abc | ᪼ | COMBINING DOUBLE PARENTHESES ABOVE|
 | 0x1abd | ᪽ | COMBINING PARENTHESES BELOW|
+| 0x1abf | ᪿ | COMBINING LATIN SMALL LETTER W BELOW|
+| 0x1ac0 | ᫀ | COMBINING LATIN SMALL LETTER TURNED W BELOW|
 | 0x1b00 | ᬀ | BALINESE SIGN ULU RICEM|
 | 0x1b01 | ᬁ | BALINESE SIGN ULU CANDRA|
 | 0x1b02 | ᬂ | BALINESE SIGN CECEK|
@@ -1454,6 +1458,7 @@ There are a total of 2908 characters in this list.
 | 0xa825 | ꠥ | SYLOTI NAGRI VOWEL SIGN U|
 | 0xa826 | ꠦ | SYLOTI NAGRI VOWEL SIGN E|
 | 0xa827 | ꠧ | SYLOTI NAGRI VOWEL SIGN OO|
+| 0xa82c | ꠬ | SYLOTI NAGRI SIGN ALTERNATE HASANTA|
 | 0xa880 | ꢀ | SAURASHTRA SIGN ANUSVARA|
 | 0xa881 | ꢁ | SAURASHTRA SIGN VISARGA|
 | 0xa8b4 | ꢴ | SAURASHTRA CONSONANT SIGN HAARU|
@@ -1736,6 +1741,8 @@ There are a total of 2908 characters in this list.
 | 0x10d37 | 𐴷 | HANIFI ROHINGYA DIGIT SEVEN|
 | 0x10d38 | 𐴸 | HANIFI ROHINGYA DIGIT EIGHT|
 | 0x10d39 | 𐴹 | HANIFI ROHINGYA DIGIT NINE|
+| 0x10eab | 𐺫 | YEZIDI COMBINING HAMZA MARK|
+| 0x10eac | 𐺬 | YEZIDI COMBINING MADDA MARK|
 | 0x10f46 | 𐽆 | SOGDIAN COMBINING DOT BELOW|
 | 0x10f47 | 𐽇 | SOGDIAN COMBINING TWO DOTS BELOW|
 | 0x10f48 | 𐽈 | SOGDIAN COMBINING DOT ABOVE|
@@ -1851,6 +1858,8 @@ There are a total of 2908 characters in this list.
 | 0x111ca | 𑇊 | SHARADA SIGN NUKTA|
 | 0x111cb | 𑇋 | SHARADA VOWEL MODIFIER MARK|
 | 0x111cc | 𑇌 | SHARADA EXTRA SHORT VOWEL MARK|
+| 0x111ce | 𑇎 | SHARADA VOWEL SIGN PRISHTHAMATRA E|
+| 0x111cf | 𑇏 | SHARADA SIGN INVERTED CANDRABINDU|
 | 0x111d0 | 𑇐 | SHARADA DIGIT ZERO|
 | 0x111d1 | 𑇑 | SHARADA DIGIT ONE|
 | 0x111d2 | 𑇒 | SHARADA DIGIT TWO|
@@ -2106,6 +2115,31 @@ There are a total of 2908 characters in this list.
 | 0x118e7 | 𑣧 | WARANG CITI DIGIT SEVEN|
 | 0x118e8 | 𑣨 | WARANG CITI DIGIT EIGHT|
 | 0x118e9 | 𑣩 | WARANG CITI DIGIT NINE|
+| 0x11930 | 𑤰 | DIVES AKURU VOWEL SIGN AA|
+| 0x11931 | 𑤱 | DIVES AKURU VOWEL SIGN I|
+| 0x11932 | 𑤲 | DIVES AKURU VOWEL SIGN II|
+| 0x11933 | 𑤳 | DIVES AKURU VOWEL SIGN U|
+| 0x11934 | 𑤴 | DIVES AKURU VOWEL SIGN UU|
+| 0x11935 | 𑤵 | DIVES AKURU VOWEL SIGN E|
+| 0x11937 | 𑤷 | DIVES AKURU VOWEL SIGN AI|
+| 0x11938 | 𑤸 | DIVES AKURU VOWEL SIGN O|
+| 0x1193b | 𑤻 | DIVES AKURU SIGN ANUSVARA|
+| 0x1193c | 𑤼 | DIVES AKURU SIGN CANDRABINDU|
+| 0x1193d | 𑤽 | DIVES AKURU SIGN HALANTA|
+| 0x1193e | 𑤾 | DIVES AKURU VIRAMA|
+| 0x11940 | 𑥀 | DIVES AKURU MEDIAL YA|
+| 0x11942 | 𑥂 | DIVES AKURU MEDIAL RA|
+| 0x11943 | 𑥃 | DIVES AKURU SIGN NUKTA|
+| 0x11950 | 𑥐 | DIVES AKURU DIGIT ZERO|
+| 0x11951 | 𑥑 | DIVES AKURU DIGIT ONE|
+| 0x11952 | 𑥒 | DIVES AKURU DIGIT TWO|
+| 0x11953 | 𑥓 | DIVES AKURU DIGIT THREE|
+| 0x11954 | 𑥔 | DIVES AKURU DIGIT FOUR|
+| 0x11955 | 𑥕 | DIVES AKURU DIGIT FIVE|
+| 0x11956 | 𑥖 | DIVES AKURU DIGIT SIX|
+| 0x11957 | 𑥗 | DIVES AKURU DIGIT SEVEN|
+| 0x11958 | 𑥘 | DIVES AKURU DIGIT EIGHT|
+| 0x11959 | 𑥙 | DIVES AKURU DIGIT NINE|
 | 0x119d1 | 𑧑 | NANDINAGARI VOWEL SIGN AA|
 | 0x119d2 | 𑧒 | NANDINAGARI VOWEL SIGN I|
 | 0x119d3 | 𑧓 | NANDINAGARI VOWEL SIGN II|
@@ -2377,6 +2411,9 @@ There are a total of 2908 characters in this list.
 | 0x16f90 | 𖾐 | MIAO TONE TOP RIGHT|
 | 0x16f91 | 𖾑 | MIAO TONE ABOVE|
 | 0x16f92 | 𖾒 | MIAO TONE BELOW|
+| 0x16fe4 | 𖿤 | KHITAN SMALL SCRIPT FILLER|
+| 0x16ff0 | 𖿰 | VIETNAMESE ALTERNATE READING MARK CA|
+| 0x16ff1 | 𖿱 | VIETNAMESE ALTERNATE READING MARK NHAY|
 | 0x1bc9d | 𛲝 | DUPLOYAN THICK LETTER SELECTOR|
 | 0x1bc9e | 𛲞 | DUPLOYAN DOUBLE MARK|
 | 0x1d165 | 𝅥 | MUSICAL SYMBOL COMBINING STEM|
@@ -2682,6 +2719,16 @@ There are a total of 2908 characters in this list.
 | 0x1e957 | 𞥗 | ADLAM DIGIT SEVEN|
 | 0x1e958 | 𞥘 | ADLAM DIGIT EIGHT|
 | 0x1e959 | 𞥙 | ADLAM DIGIT NINE|
+| 0x1fbf0 | 🯰 | SEGMENTED DIGIT ZERO (normalizes to 0x30: 0 (DIGIT ZERO))|
+| 0x1fbf1 | 🯱 | SEGMENTED DIGIT ONE (normalizes to 0x31: 1 (DIGIT ONE))|
+| 0x1fbf2 | 🯲 | SEGMENTED DIGIT TWO (normalizes to 0x32: 2 (DIGIT TWO))|
+| 0x1fbf3 | 🯳 | SEGMENTED DIGIT THREE (normalizes to 0x33: 3 (DIGIT THREE))|
+| 0x1fbf4 | 🯴 | SEGMENTED DIGIT FOUR (normalizes to 0x34: 4 (DIGIT FOUR))|
+| 0x1fbf5 | 🯵 | SEGMENTED DIGIT FIVE (normalizes to 0x35: 5 (DIGIT FIVE))|
+| 0x1fbf6 | 🯶 | SEGMENTED DIGIT SIX (normalizes to 0x36: 6 (DIGIT SIX))|
+| 0x1fbf7 | 🯷 | SEGMENTED DIGIT SEVEN (normalizes to 0x37: 7 (DIGIT SEVEN))|
+| 0x1fbf8 | 🯸 | SEGMENTED DIGIT EIGHT (normalizes to 0x38: 8 (DIGIT EIGHT))|
+| 0x1fbf9 | 🯹 | SEGMENTED DIGIT NINE (normalizes to 0x39: 9 (DIGIT NINE))|
 | 0xe0100 | 󠄀 | VARIATION SELECTOR-17|
 | 0xe0101 | 󠄁 | VARIATION SELECTOR-18|
 | 0xe0102 | 󠄂 | VARIATION SELECTOR-19|
