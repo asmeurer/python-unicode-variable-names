@@ -1,3 +1,7 @@
+<!-- WARNING: This file is generated automatically, do not edit it
+directly. Rather, edit the file generate_names.py which generates this file.
+-->
+
 ## Continue Characters
 
 
