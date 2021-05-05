@@ -8,8 +8,9 @@ To generate the page, use
 
     python3 generate.py
 
-This will generate the file docs/index.md. The file should be committed to the
-repo. Never edit this file directly. To update its contents, update the script
+This will generate the files `docs/start-characters.md` and
+`docs/continue-characters.md`. The files should be committed to the repo.
+Don't edit these file directly. To update their contents, update the script
 `generate.py`.
 
 GitHub pages will automatically build the page and it can be viewed at
