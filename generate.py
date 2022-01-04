@@ -42,7 +42,7 @@ def write_character(f, c):
     except ValueError:
         name = "(unknown) [^unknown]"
     n = unicodedata.normalize('NFKC', c)
-    f.write(f"| {hex(ord(c))} | {c} | {name}")
+    f.write(f"| U+{ord(c):04X} | {c} | {name}")
     if c != n:
         names = ', '.join(unicodedata.name(i) for i in n)
         f.write(f" (normalizes to {', '.join(hex(ord(i)) for i in n)}: {n} ({names}))")
@@ -58,8 +58,8 @@ uses Unicode version {unicodedata.unidata_version}
 """
 
     table_header = """\
-| Hex | Character | Name |
-|-----|-----------|------|
+| Code point | Character | Name |
+|------------|-----------|------|
 """
 
     with open("docs/start-characters.md", 'w') as f:
