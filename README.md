@@ -13,8 +13,13 @@ This will generate the files `docs/start-characters.md` and
 Don't edit these files directly. To update their contents, update the script
 `generate.py`.
 
-GitHub pages will automatically build the page and it can be viewed at
-http://www.asmeurer.com/python-unicode-variable-names/.
+Note that different versions of Python are build with different versions of
+the Unicode standard, and thus will produce different lists of characters.
+This can differ even between minor versions. You should always generate this
+page with the latest released version of Python.
+
+GitHub pages will automatically convert the generated Markdown to HTML, which
+can be viewed at http://www.asmeurer.com/python-unicode-variable-names/.
 
 # Contributing
 
