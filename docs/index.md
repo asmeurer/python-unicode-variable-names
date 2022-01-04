@@ -14,17 +14,18 @@ Be warned that Python always applies
 normalization to characters. Therefore, two distinct characters may actually
 produce the same variable name. For example:
 
-    >>> ª = 1 # FEMININE ORDINAL INDICATOR
-    >>> a # LATIN SMALL LETTER A (i.e., ASCII lowercase 'a')
+    >>> ª = 1 # FEMININE ORDINAL INDICATOR (U+00AA)
+    >>> a # LATIN SMALL LETTER A (i.e., ASCII lowercase 'a', U+0061)
     1
 
 Normalization also combines accents, so it is possible for a valid name to
 contain characters that are not present below. For example, `á` consists of
-two characters, LATIN SMALL LETTER A (i.e., ASCII lowercase `a`) and COMBINING
-ACUTE ACCENT. The second character, COMBINING ACUTE ACCENT, is not present in
-the list below because it is not valid in an identifier by itself. However,
-when it follows `a`, the two characters together NFKC normalize to the single
-character `á` (LATIN SMALL LETTER A WITH ACUTE).
+two characters, LATIN SMALL LETTER A (i.e., ASCII lowercase `a`, U+0061) and
+COMBINING ACUTE ACCENT (U+0301). The second character, COMBINING ACUTE ACCENT,
+is not present in the list below because it is not valid in an identifier by
+itself. However, when it follows `a`, the two characters together NFKC
+normalize to the single character `á` (LATIN SMALL LETTER A WITH ACUTE,
+U+00E1).
 
 You can normalize strings with Python using the `unicodedata` module:
 
