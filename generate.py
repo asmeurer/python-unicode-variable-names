@@ -45,7 +45,7 @@ def write_character(f, c):
     f.write(f"| U+{ord(c):04X} | {c} | {name}")
     if c != n:
         names = ', '.join(unicodedata.name(i) for i in n)
-        f.write(f" (normalizes to {', '.join(hex(ord(i)) for i in n)}: {n} ({names}))")
+        f.write(f" (normalizes to {', '.join('U+{x:04X}'.format(x=ord(i)) for i in n)}: {n} ({names}))")
     f.write('|\n')
 
 def main():
