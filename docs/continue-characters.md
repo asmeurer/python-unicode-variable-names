@@ -11,7 +11,7 @@ character including the first, see the [Start Characters](start-characters).
 
 You can also view the <a href="continue-characters.md">raw markdown</a> for this page.
 
-This page was generated using Python version 3.10.1, which
+This page was generated using Python version 3.10.2, which
 uses Unicode version 13.0.0
 
 There are a total of 2955 characters in this list.
