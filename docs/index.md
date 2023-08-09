@@ -1,6 +1,6 @@
 # Python Unicode Variable Names
 
-> **If you just want the list of characters, [scroll down](#unicode-character-list).**
+**If you just want the list of characters, [scroll down](#unicode-character-list).**
 
 This page lists all the characters that are valid in Python 3 variable names.
 In Python 2, variable names could only contain the ASCII characters a-z, A-Z,
