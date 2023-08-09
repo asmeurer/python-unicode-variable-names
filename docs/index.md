@@ -80,7 +80,6 @@ to:
     >>> 'and'.isidentifier()
     True
     >>> and = 1
-    >>> and = 1
       File "<stdin>", line 1
         and = 1
         ^^^
