@@ -1,3 +1,7 @@
+# Python Unicode Variable Names
+
+**If you just want the list of characters, [scroll down](#unicode-character-list).**
+
 This page lists all the characters that are valid in Python 3 variable names.
 In Python 2, variable names could only contain the ASCII characters a-z, A-Z,
 0-9, and _, but in Python 3, a much larger set of Unicode characters are
@@ -60,7 +64,7 @@ alphanumeric + underscore. It doesn't include things like mathematical symbols
         ^
     SyntaxError: invalid character in identifier
 
-## Testing if a string is a valid Python variable name
+### Testing if a string is a valid Python variable name
 
 Do not try to use a regular expression to test if something is a valid Python
 variable name. Instead, use the `isidentifier()` method on the string:
@@ -106,7 +110,7 @@ So to test if something is a valid variable name, use something like
         import keyword
         return x.isidentifier() and not keyword.iskeyword(x)
 
-## Should I use these characters in my Python code?
+### Should I use these characters in my Python code?
 
 [PEP 8](https://www.python.org/dev/peps/pep-0008/#source-file-encoding)
 specifies:
@@ -127,7 +131,7 @@ If you do decide to use non-ASCII characters for variable names, be aware of
 the normalization issues described above. It is advisable to always insert
 variable names in source files using their normalized form.
 
-# Unicode character list
+## Unicode character list
 
 There are two types of valid characters, "start" and "continue" characters.
 "Start" characters can be anywhere in an identifier. They correspond to
