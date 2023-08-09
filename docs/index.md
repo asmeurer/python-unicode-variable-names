@@ -60,6 +60,52 @@ alphanumeric + underscore. It doesn't include things like mathematical symbols
         ^
     SyntaxError: invalid character in identifier
 
+## Testing if a string is a valid Python variable name
+
+Do not try to use a regular expression to test if something is a valid Python
+variable name. Instead, use the `isidentifier()` method on the string:
+
+    >>> 'τ2'.isidentifier()
+    True
+    >>> '🙁'.isidentifier()
+    False
+
+Note that this will also include keywords, which cannot actually be assigned
+to:
+
+    >>> 'and'.isidentifier()
+    True
+    >>> and = 1
+    >>> and = 1
+      File "<stdin>", line 1
+        and = 1
+        ^^^
+    SyntaxError: invalid syntax
+
+To test if something is a keyword, use the `keyword` module in the standard
+library. Note that Python distinguishes between hard keywords (like `and`),
+which cannot be assigned as variable names, and soft keywords (like `case`),
+which can be assigned as variable names.
+
+    >>> import keyword
+    >>> keyword.iskeyword('and')
+    True
+    >>> keyword.issoftkeyword('and')
+    False
+    >>> keyword.iskeyword('case')
+    False
+    >>> keyword.issoftkeyword('case')
+    True
+    >>> case = 1
+    >>> case
+    1
+
+So to test if something is a valid variable name, use something like
+
+    def is_valid_variable(x: str) -> bool:
+        import keyword
+        return x.isidentifier() and not keyword.iskeyword(x)
+
 ## Should I use these characters in my Python code?
 
 [PEP 8](https://www.python.org/dev/peps/pep-0008/#source-file-encoding)
