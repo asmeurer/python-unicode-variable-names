@@ -20,11 +20,9 @@ Be warned that Python always applies
 normalization to characters. Therefore, two distinct characters may actually
 produce the same variable name. For example:
 
-```py
->>> ª = 1 # FEMININE ORDINAL INDICATOR (U+00AA)
->>> a # LATIN SMALL LETTER A (i.e., ASCII lowercase 'a', U+0061)
-1
-```
+    >>> ª = 1 # FEMININE ORDINAL INDICATOR (U+00AA)
+    >>> a # LATIN SMALL LETTER A (i.e., ASCII lowercase 'a', U+0061)
+    1
 
 Normalization also combines accents, so it is possible for a valid name to
 contain characters that are not present below. For example, `á` consists of
@@ -37,16 +35,14 @@ U+00E1).
 
 You can normalize strings with Python using the `unicodedata` module:
 
-```py
->>> a = 'á'
->>> len(a)
-2
->>> import unicodedata
->>> unicodedata.normalize("NFKC", a)
-'á'
->>> len(_)
-1
-```
+    >>> a = 'á'
+    >>> len(a)
+    2
+    >>> import unicodedata
+    >>> unicodedata.normalize("NFKC", a)
+    'á'
+    >>> len(_)
+    1
 
 The below table lists characters that normalize to other characters, but be
 aware that other combinations of characters such as combining accents may not
@@ -57,71 +53,61 @@ in variable names. The valid characters are primarily those that are "like"
 alphanumeric + underscore. It doesn't include things like mathematical symbols
 (except for Greek letters because those are letters) or emoji.
 
-```py
->>> ∫x = 1
-  File "<stdin>", line 1
-    ∫x = 1
-     ^
-SyntaxError: invalid character in identifier
->>> 💩 = 'Python 2'
-  File "<stdin>", line 1
-    💩 = 'Python 2'
-    ^
-SyntaxError: invalid character in identifier
-```
+    >>> ∫x = 1
+      File "<stdin>", line 1
+        ∫x = 1
+         ^
+    SyntaxError: invalid character in identifier
+    >>> 💩 = 'Python 2'
+      File "<stdin>", line 1
+        💩 = 'Python 2'
+        ^
+    SyntaxError: invalid character in identifier
 
 ### Testing if a string is a valid Python variable name
 
 Do not try to use a regular expression to test if something is a valid Python
 variable name. Instead, use the `isidentifier()` method on the string:
 
-```py
->>> 'τ2'.isidentifier()
-True
->>> '🙁'.isidentifier()
-False
-```
+    >>> 'τ2'.isidentifier()
+    True
+    >>> '🙁'.isidentifier()
+    False
 
 Note that this will also include keywords, which cannot actually be assigned
 to:
 
-```py
->>> 'and'.isidentifier()
-True
->>> and = 1
-  File "<stdin>", line 1
-    and = 1
-    ^^^
-SyntaxError: invalid syntax
-```
+    >>> 'and'.isidentifier()
+    True
+    >>> and = 1
+      File "<stdin>", line 1
+        and = 1
+        ^^^
+    SyntaxError: invalid syntax
 
 To test if something is a keyword, use the `keyword` module in the standard
 library. Note that Python distinguishes between hard keywords (like `and`),
 which cannot be assigned as variable names, and soft keywords (like `case`),
 which can be assigned as variable names.
 
-```py
->>> import keyword
->>> keyword.iskeyword('and')
-True
->>> keyword.issoftkeyword('and')
-False
->>> keyword.iskeyword('case')
-False
->>> keyword.issoftkeyword('case')
-True
->>> case = 1
->>> case
-1
-```
+    >>> import keyword
+    >>> keyword.iskeyword('and')
+    True
+    >>> keyword.issoftkeyword('and')
+    False
+    >>> keyword.iskeyword('case')
+    False
+    >>> keyword.issoftkeyword('case')
+    True
+    >>> case = 1
+    >>> case
+    1
 
 So to test if something is a valid variable name, use something like
 
-```py
-def is_valid_variable(x: str) -> bool:
-    import keyword
-    return x.isidentifier() and not keyword.iskeyword(x)
-```
+    def is_valid_variable(x: str) -> bool:
+        import keyword
+        return x.isidentifier() and not keyword.iskeyword(x)
 
 ### Should I use these characters in my Python code?
 
