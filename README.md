@@ -13,7 +13,7 @@ This will generate the files `docs/start-characters.md` and
 Don't edit these files directly. To update their contents, update the script
 `generate.py`.
 
-Note that different versions of Python are build with different versions of
+Note that different versions of Python are built with different versions of
 the Unicode standard, and thus will produce different lists of characters.
 This can differ even between minor versions. You should always generate this
 page with the latest released version of Python.
