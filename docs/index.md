@@ -17,8 +17,8 @@ The full details of which Unicode characters are allowed is described in the
 
 Be warned that Python always applies
 [NFKC](https://en.wikipedia.org/wiki/Unicode_equivalence#Normalization)
-normalization to characters. Therefore, two distinct characters may actually
-produce the same variable name. For example:
+normalization to variable names. Therefore, two distinct characters may
+actually produce the same variable name. For example:
 
     >>> ª = 1 # FEMININE ORDINAL INDICATOR (U+00AA)
     >>> a # LATIN SMALL LETTER A (i.e., ASCII lowercase 'a', U+0061)
