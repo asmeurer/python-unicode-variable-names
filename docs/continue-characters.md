@@ -11,10 +11,10 @@ character including the first, see the [Start Characters](start-characters).
 
 You can also view the <a href="continue-characters.md">raw markdown</a> for this page.
 
-This page was generated using Python version 3.12.3, which
-uses Unicode version 15.0.0
+This page was generated using Python version 3.13.0, which
+uses Unicode version 15.1.0
 
-There are a total of 3140 characters in this list.
+There are a total of 3144 characters in this list.
 
 | Code point | Character | Name |
 |------------|-----------|------|
@@ -1393,6 +1393,8 @@ There are a total of 3140 characters in this list.
 | U+1DFD | ᷽ | COMBINING ALMOST EQUAL TO BELOW|
 | U+1DFE | ᷾ | COMBINING LEFT ARROWHEAD ABOVE|
 | U+1DFF | ᷿ | COMBINING RIGHT ARROWHEAD AND DOWN ARROWHEAD BELOW|
+| U+200C | ‌ | ZERO WIDTH NON-JOINER|
+| U+200D | ‍ | ZERO WIDTH JOINER|
 | U+203F | ‿ | UNDERTIE|
 | U+2040 | ⁀ | CHARACTER TIE|
 | U+2054 | ⁔ | INVERTED UNDERTIE|
@@ -1466,6 +1468,7 @@ There are a total of 3140 characters in this list.
 | U+302F | 〯 | HANGUL DOUBLE DOT TONE MARK|
 | U+3099 | ゙ | COMBINING KATAKANA-HIRAGANA VOICED SOUND MARK|
 | U+309A | ゚ | COMBINING KATAKANA-HIRAGANA SEMI-VOICED SOUND MARK|
+| U+30FB | ・ | KATAKANA MIDDLE DOT|
 | U+A620 | ꘠ | VAI DIGIT ZERO|
 | U+A621 | ꘡ | VAI DIGIT ONE|
 | U+A622 | ꘢ | VAI DIGIT TWO|
@@ -1734,6 +1737,7 @@ There are a total of 3140 characters in this list.
 | U+FF18 | ８ | FULLWIDTH DIGIT EIGHT (normalizes to U+0038: 8 (DIGIT EIGHT))|
 | U+FF19 | ９ | FULLWIDTH DIGIT NINE (normalizes to U+0039: 9 (DIGIT NINE))|
 | U+FF3F | ＿ | FULLWIDTH LOW LINE (normalizes to U+005F: _ (LOW LINE))|
+| U+FF65 | ･ | HALFWIDTH KATAKANA MIDDLE DOT (normalizes to U+30FB: ・ (KATAKANA MIDDLE DOT))|
 | U+FF9E | ﾞ | HALFWIDTH KATAKANA VOICED SOUND MARK (normalizes to U+3099: ゙ (COMBINING KATAKANA-HIRAGANA VOICED SOUND MARK))|
 | U+FF9F | ﾟ | HALFWIDTH KATAKANA SEMI-VOICED SOUND MARK (normalizes to U+309A: ゚ (COMBINING KATAKANA-HIRAGANA SEMI-VOICED SOUND MARK))|
 | U+101FD | 𐇽 | PHAISTOS DISC SIGN COMBINING OBLIQUE STROKE|
